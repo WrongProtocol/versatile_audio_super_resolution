@@ -11,7 +11,7 @@ def inference(audio_file, model_name, guidance_scale, ddim_steps):
         ddim_steps=ddim_steps
     )
     
-    return (44100, waveform)
+    return (48000, waveform)
 
 iface = gr.Interface(
     fn=inference, 
