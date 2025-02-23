@@ -13,6 +13,7 @@ COPY requirements.txt .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir cog pyloudnorm
 
 # Copy the rest of the application code into the container
 COPY . .
